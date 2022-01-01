@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding: 10px;
+
+}
+
+.center{
+  text-align: center;
+}
+
+.mt-3{
+  margin-top: 1rem;
+}
+
+.my-3{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#numeros{
+  display: flex;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: 40px auto;
+}
+
+.numero{
+  background-color: #20986a;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 35px;
+  font-size: 1.2rem;
+}
+
+p{
+   padding: 5px;
+   text-align: center;
+}
+
+button{
+  border: none;
+  padding: 10px;
+  box-shadow: 3px 3px 3px #626262;
+  background-color: #20986a;
+  color: #ffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+button:focus {     
+  box-shadow: none;
+}
+
+.bolder{
+  font-weight: bolder;
+}
+
+@media (max-width: 420px){
+  .numero{
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  h1{
+    font-size: 1.7rem;
+  }
+}
