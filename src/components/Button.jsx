@@ -8,7 +8,7 @@ class Button extends React.Component {
   }
 
   handleClick() {
-    this.props.onClick()
+    this.props.onClick(this.props.context)
   }
 
   render() {

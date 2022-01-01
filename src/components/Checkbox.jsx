@@ -8,7 +8,7 @@ class Checkbox extends React.Component {
   }
 
   handleChange() {
-    this.props.onChange()
+    this.props.onChange(this.props.context)
   }
 
   render() {

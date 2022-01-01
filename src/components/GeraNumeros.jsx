@@ -20,7 +20,7 @@ class GeraNumero extends React.Component{
     let min = 1 * (fase * 20) - 20 + 1
     let max = 20 * fase
 
-    if (this.all) {
+    if (all) {
       min = 1
       max = 60
     }
@@ -51,16 +51,17 @@ class GeraNumero extends React.Component{
     return nums
   }
 
-  mudou(){
+  mudou(classe){
     checkbox = document.getElementById('todos')
     description = document.getElementById('descricao')
     all = checkbox.checked
     if (all) description.innerHTML = TEXT_ALL
     else description.innerHTML = TEXT_SOME
+    classe.setState({nums: classe.Obter6Numeros()})
   }
 
-  reload(){
-    return window.location.reload()
+  reload(classe){
+    classe.setState({ nums: classe.Obter6Numeros() })
   }
 
   render() {
@@ -74,9 +75,9 @@ class GeraNumero extends React.Component{
           <div className="numero" key='5'>{this.state.nums[4]}</div>
           <div className="numero" key='6'>{this.state.nums[5]}</div>
         </div>
-        <Button title="Atualizar" onClick={this.reload}/>
+        <Button title="Atualizar" onClick={this.reload} context={this}/>
         <p className="my-3" key="p-1">
-          <Checkbox title="todos" onChange={this.mudou}/> <label htmlFor="todos"><span id="descricao">{TEXT_SOME}</span></label>
+          <Checkbox title="todos" onChange={this.mudou} context={this}/> <label htmlFor="todos"><span id="descricao">{TEXT_SOME}</span></label>
         </p>
       </React.Fragment>
     )
