@@ -5,3 +5,7 @@ Com grande parte das pessoas querendo apostar na Mega-sena da virada e diante da
 # Instalação
 
 Depois de clonar o repositório, rode o comando `npm run start` para vizualizar o código em ação no servidor de desenvolvimento.
+
+# Aviso Legal
+
+Estes números são gerados aleatoriamente, não há qualquer garantia que eles serão sorteados, qualquer aposta feita é única e exclusivamente por sua conta.
