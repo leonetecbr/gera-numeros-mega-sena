@@ -1,15 +1,30 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mega-Sena",
+  "name": "Números da Mega-Sena",
+  "description": "Não sabe o que marcar para o próximo concurso da Mega-Sena? Vem que te ajudamos com números gerados conforme seu gosto.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "35x35",
       "type": "image/x-icon"
+    },
+    {
+      "src": "icons/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/90.png",
+      "sizes": "90x90",
+      "type":"image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/apps/megasena/?utm_source=homescreen",
+  "scope": "/apps/megasena/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#20986a",
+  "background_color": "#20986a"
 }
